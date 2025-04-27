@@ -2,7 +2,7 @@
 <p align="center">
   <img src="MEDS SS/meds pic.png" alt="MEDS Lab Picture" width="300"/>
 </p>
-This repository will contain all information about the training program of MEDS Lab.
+This repository will contain all information about the traicning program of MEDS Lab.
 
 ## Checklist of completed topics:
 -   ### [x] Linux shell scripting: 
