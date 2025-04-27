@@ -1,0 +1,5 @@
+# Ignore the "MEDS SS/" folder
+MEDS SS/
+
+# Ignore the "temp.txt" file
+temp.txt
