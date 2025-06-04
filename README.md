@@ -1,6 +1,6 @@
 # MEDS Training Readme 
 <p align="center">
-  <img src="images/meds_pic.png" alt="MEDS Lab Picture" width="300"/>
+  <img src="https://github.com/Ammarahwakeel/MEDS_Training/blob/master/png/meds_pic.png" alt="MEDS Lab Picture" width="300"/>
 </p>
 
 
