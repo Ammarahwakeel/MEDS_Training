@@ -1,9 +1,9 @@
 # Lecture#1: 
 ## ***Introduction: Fundamental,Gates,Transistor***
 - **Importance of computer architecture and recent trending research fields:**
-In the modern era of technology, real world applications like smart phones, super computers, quantum computer and self driving cars need revolutions in terms of robustness, latencey, energy efficiency and many other things which is only possible by doing reserach in the computer architecture field.
+In the modern era of technology, real world applications like smart phones, super computers, quantum computer and self driving cars need revolutions in terms of robustness, latencey, energy efficiency and many other things which is only possible by doing reserach in the computer architecture field
 - **Transformation Hierarchy**:  
-To achieve the highest efficiency , performance , robustness we must take the expanded view of computer architecture, as shown below:
+To achieve the highest efficiency , performance , robustness we must take the expanded view of computer architecture as shown below:
 ![Alt text](https://github.com/Ammarahwakeel/MEDS_Training/blob/master/png/image2.png)
 
 
@@ -21,12 +21,12 @@ Modern computers use CMOS(NMOS+PMOS) to implement logic of any gate i.e: NOT ,NA
 - **LATENCY & POWER CONUMPTION**:
 Latency originally means the delay in the output signal when input is changed,by connecting transistors in paraleel we have more latency and vice versa.While the power consumption depends on voltage, current and other factors like frequency depending on whether the power consumed is dynamic or static.
 
-- combinational circuits are memoryless and output only depends on the input.
+- combinational circuits are memoryless and output only depends on the inputs.
 - **BOOLEAN EQUATIONS:**
 we can use different Boolean Algebra techniques to form Boolean equations which represents different logic gates. And these Boolean functions are represented in either **SOP OR POS** form using K-maps or simplification of functions.
 - **Basic Circuit Compoents**:
 1. **DECODER**: It maps n inputs to 2^n outputs. At one time, certain combinations of inputs maps to only one output.
-2. **MULTIPLEXERS(MUX)**: selects one of the N inputs to connect it to the output. Mux can also be used as look up table to impelment funactions.
+2. **MULTIPLEXERS(MUX)**: selects one of the N inputs to connect it to the output. Mux can also be used as look up table to impelment functions.
 3. **LOOKUP TABLES(LUTS):**
 LUT is similar to truth table but an N bit LUT  can implement anu function  using N bit inputs.
 3. **PROGRAMMABLE ARRAY(PLAS)**:
@@ -40,6 +40,7 @@ It gates different signals onto wire, acts like a switch and have an enable sign
 # LECTURE#3:
 ## ***SEQUENTIAL CIRCUITS***
 - Circuit which has memory i.e can remember its previous state. These are the Circuits in which output depends on the input as well as present/current state as shown in figures:
+![Alt text](https://github.com/Ammarahwakeel/MEDS_Training/blob/master/png/image4.png)
 
 - **RS- LATCH**:
 It is a cross coupled NAND gates in which we reset or set the values of output or Q. But in RS latch there is an input combination of(0,0) which is forbidden in which Latch can go into metastable state, so to solve this problem we add two NAND gates at the start to make sure that both input can never become zero at the same time, hence making a **GATED D LATCH**.
@@ -70,7 +71,7 @@ A pictorial way of representing transitions of one state to another with respect
  q <= d; // pronounced “q gets d”
 endmodule
 ```
-
+![Alt text](https://github.com/Ammarahwakeel/MEDS_Training/blob/master/png/image5.png)
 # LECTURE#4:
 ## ***SEQUENTIAL LOGIC 2, VERILOG***
 - **HARDWARE DESCRIPTION LANGUAGES**:
@@ -98,7 +99,7 @@ endmodule
 ```
 - **PRIORITY CIRCUIT**:
 Inputs/requestors have priority regarding MSB or LSB bits, and depending on that priority we have corresponding inputs as shown:
-
+![Alt Text](https://github.com/Ammarahwakeel/MEDS_Training/blob/master/png/image3.png)
 - **HARDWARE SYNTHESIS**:
 Modern tools are able to map synthesible HDL code into low-level cell libraries and they can perform many optimization.
 - **PARAMITERIZED MODULES**:
@@ -128,6 +129,7 @@ statement;
  # LECTURE#6:
  ## ***TIMING & VERIFICATION***:
  - We assume that output changes immediately when input changes but it is not true in reality, and outputs are delayed from inputs because of capacitances, resistances and many other reasons
+ ![Alt Text](https://github.com/Ammarahwakeel/MEDS_Training/blob/master/png/image6.png)
  - **contamination & propagation delays**:
  contaminatio delay is the delay untill output starts changing(i.e the minimum time in which output is stable with its previous value)  while propagation delay is the maximum time after which output is stable with its new value.
 - **CRITICAL PATHS**:
